@@ -1,0 +1,48 @@
+---
+title: "R Notebook"
+author: "Hejing Wang"
+output:
+  html_document:
+    df_print: paged
+  html_notebook: default
+Date: Oct 20th
+---
+
+```{r Setup, include=FALSE, results='hide', warning=FALSE}
+library(knitr)
+opts_chunk$set(fig.path="images/",
+               cache.path="cache/",
+               cache=FALSE,
+               echo=TRUE,
+               message=FALSE,
+               warning=FALSE)  
+```  
+
+
+# Setup - devtools
+```{r}
+# Get the CRAN version of Devtools
+## install.packages("devtools")
+# Load devtools
+## library(devtools)
+# Get the development version of devtools
+## devtools::install_github("hadley/devtools")
+```
+
+# Setup - roxygen2
+```{r}
+# Installing the development version of roxygen
+## devtools::install_github("klutometis/roxygen")
+```
+
+# Setup - testthat
+```{r}
+# Installing testthat
+## install.packages("testthat")
+```
+# check if everything is OK!
+```{r}
+library(devtools)
+has_devel()
+```
+

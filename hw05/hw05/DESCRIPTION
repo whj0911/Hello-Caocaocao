@@ -1,0 +1,19 @@
+Package: hw05
+Type: Package
+Title: Try to create my own package
+Version: 0.1.0
+Author: Hejing Wang
+Author@R: person("Hejing Wang", email = "hw2675@columbia.edu", 
+    role = c("aut", "cre"))
+Maintainer: The package maintainer <hw2675@columbia.edu>
+Description: The function takes in a data frame and outputs the column names, their types, 
+    and the five most common elements.
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+Imports: 
+    dplyr
+RoxygenNote: 6.1.99.9001
+Suggests: 
+    purrr
+URL: https://github.com/QMSS-G5072-2019/Wang_Hejing/tree/master/hw05/hw05
